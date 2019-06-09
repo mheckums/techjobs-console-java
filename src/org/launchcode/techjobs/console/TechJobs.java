@@ -115,11 +115,16 @@ public class TechJobs {
         for (int i = 0; i < someJobs.size(); i++) {
 
 
+            System.out.println("\n*****");
             HashMap<String, String> map = someJobs.get(i);
             for (HashMap.Entry<String, String> entry : map.entrySet()) {
 
-                System.out.println(entry);
+                String key = entry.getKey();
+                String value = entry.getValue();
+                System.out.println(key + ": " + value);
+
             }
+            System.out.println("*****\n");
 
         }
 
